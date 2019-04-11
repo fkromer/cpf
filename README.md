@@ -17,3 +17,12 @@ Attention: This build procedure is quick and dirty, not reproducible.
     mv main cpf
     chmod +x cpf
 
+## TODO
+
+- packaging
+- command line interface with e.g. [cli](https://github.com/urfave/cli) or [cobra](https://github.com/spf13/cobra)
+- use [colly](https://github.com/gocolly/colly) instead of [soup](github.com/anaskhan96/soup)
+- just for fun: parallelize processing
+- cleanup
+- robustification
+
