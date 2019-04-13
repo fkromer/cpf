@@ -8,11 +8,22 @@ Pipe `cpf` output into `fzf` to fuzzy find in Check_MK plugin meta data.
 
     cpf | fzf
 
+## Installation
+
+Download executable into user specific directory for executables and make it executable:
+
+    wget -O ~/.local/bin/cpf ...
+    chmod +x ~/.local/bin/cpf
+
+## Usage
+
+    cpf
+
 ## Build
 
 Attention: This build procedure is quick and dirty, not reproducible.
 
-    go get github.com/anaskhan96/soup
+    go get github.com/gocolly/colly
     go build main.go
     mv main cpf
     chmod +x cpf
@@ -21,8 +32,9 @@ Attention: This build procedure is quick and dirty, not reproducible.
 
 - packaging
 - command line interface with e.g. [cli](https://github.com/urfave/cli) or [cobra](https://github.com/spf13/cobra)
-- use [colly](https://github.com/gocolly/colly) instead of [soup](github.com/anaskhan96/soup)
-- just for fun: parallelize processing
-- cleanup
-- robustification
 
+## Development resources
+
+- [colly (website docs)](http://go-colly.org/docs/)
+- [colly (GoDoc)](https://godoc.org/github.com/gocolly/colly)
+- [Scraping the Web in Golang with Colly and Goquery](https://benjamincongdon.me/blog/2018/03/01/Scraping-the-Web-in-Golang-with-Colly-and-Goquery/)
