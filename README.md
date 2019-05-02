@@ -21,13 +21,14 @@ Download executable into user specific directory for executables and make it exe
 
 ## Build
 
-Attention: This build procedure is quick and dirty, not reproducible.
+To trigger a reproducible build execute:
 
-    go get gopkg.in/urfave/cli.v1
-    go get github.com/gocolly/colly
     go build main.go
     mv main cpf
     chmod +x cpf
+
+`go build` will execute `go mod download` implicitly to get the dependencies specified in `go.mod`
+if required. This is the case when building the first time or if the versions of dependencies change.
 
 ## Wishlist
 
