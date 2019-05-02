@@ -4,9 +4,22 @@ Check Plug-in Find: Minimalistic command line app to get information about Check
 
 ## Usage
 
-Pipe `cpf` output into `fzf` to fuzzy find in Check_MK plugin meta data.
+Print the help:
 
-    cpf | fzf
+    cpf -h
+
+Pipe `cpf` output into `fzf` to fuzzy find in Check_MK plugin meta data (line scope).
+This works for names, titles and URLs:
+
+    $ cpf | fzf
+    > Name: cisco
+    > Title: cisco
+    > URL: cisco
+
+Pipe `cpf` output into `ag` (or an equivalent like `grep`, `ack`, etc.) to find in Check_MK
+plugin meta data (check scope). Adjust values passed to `-A` and `-B` options as needed.
+
+    cpf | ag cisco -A 10 -B 10
 
 ## Installation
 
