@@ -15,10 +15,6 @@ Download executable into user specific directory for executables and make it exe
     wget -O ~/.local/bin/cpf https://github.com/fkromer/cpf/releases/download/0.1.0/cpf
     chmod +x ~/.local/bin/cpf
 
-## Usage
-
-    cpf
-
 ## Build
 
 To trigger a reproducible build execute:
